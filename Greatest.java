@@ -1,3 +1,5 @@
+// Find the greatest of three number
+
 import java.util.Scanner;
 
 public class Greatest {
