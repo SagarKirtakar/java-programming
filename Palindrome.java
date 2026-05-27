@@ -17,6 +17,13 @@ public class Palindrome {
         while(n>0) {
            r = n%10;
            s = (s*10) + r; 
+           n = n / 10;
+        }
+
+        if(c == n) {
+            System.out.println(n+ " is palindrome number");
+        }else {
+            System.out.println(n+ " is not palindrome number");
         }
     }
 }
