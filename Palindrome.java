@@ -9,6 +9,12 @@ public class Palindrome {
         
         System.out.println("Enter any number: ");
 
-        int num = sc.nextInt();
+        int n = sc.nextInt();
+
+        int c=n;
+
+        while(n>0) {
+            
+        }
     }
 }
