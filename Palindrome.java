@@ -20,10 +20,10 @@ public class Palindrome {
            n = n / 10;
         }
 
-        if(c == n) {
-            System.out.println(n+ " is palindrome number");
+        if(c == s) {
+            System.out.println(c+ " is a palindrome number");
         }else {
-            System.out.println(n+ " is not palindrome number");
+            System.out.println(c+ " is not a palindrome number");
         }
     }
 }
