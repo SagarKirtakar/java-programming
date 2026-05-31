@@ -19,9 +19,12 @@ public class DeleteDuplicatesChars {
 
         for(int i=0; i< str1.length(); i++) {
             if(result.indexOf(str1.charAt(i)) == -1){
-                
+                result += str1.charAt(i);
             }
         }
 
+        System.out.println("Before removing duplicates: "+str1);
+
+        System.out.println("After removing duplicates: "+result);
     }
 }
