@@ -5,11 +5,17 @@ public class DeleteDuplicatesChars {
 
         String str1 = "Hello World";
 
-        String result = str1.replaceAll("l", "");
+        // First Way 
 
-        System.out.println("Before String: "+str1);
+        // String result = str1.replaceAll("l", "");
 
-        System.out.println("After String: "+result);
-        
+        // System.out.println("Before String: "+str1);
+
+        // System.out.println("After String: "+result);
+
+        // Second Way
+
+        String result = "";
+
     }
 }
