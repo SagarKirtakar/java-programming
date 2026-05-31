@@ -17,5 +17,11 @@ public class DeleteDuplicatesChars {
 
         String result = "";
 
+        for(int i=0; i< str1.length(); i++) {
+            if(result.indexOf(str1.charAt(i)) == -1){
+                
+            }
+        }
+
     }
 }
