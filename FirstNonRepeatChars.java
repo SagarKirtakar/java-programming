@@ -1,10 +1,16 @@
         /*  Find first non-repeated characters in given String */
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
 public class FirstNonRepeatChars {
 
     public static void main(String[] args) {
         
         String input = "AABDBCCSDM";
+
+        // First Approach without Collection
 
         for(int i=0; i<input.length(); i++) {
             
@@ -18,6 +24,28 @@ public class FirstNonRepeatChars {
             }
             if(unique) {
                 System.out.println(input.charAt(i));
+                break;
+            }
+        }
+
+        // Second Approach with Collection
+
+        Map<Character, Integer> map = new HashMap();
+
+        for(int i=0; i<input.length(); i++) {
+            char ch = input.charAt(i);
+            if(map.containsKey(ch)) {
+                map.put(ch, map.get(ch)+1);
+            }else {
+                map.put(ch, 1);
+            }
+        }
+
+        System.out.println(map);
+
+        for(Entry<Character, Integer> entrySet : map.entrySet()) {
+            if(entrySet.getValue() == 1) {
+                System.out.println(entrySet.getKey());
                 break;
             }
         }
