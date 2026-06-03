@@ -1,9 +1,9 @@
-package Concepts;
-class Car {
+package Concepts.AbstractClass;
+class Car extends Vehicle{
     
         // Properties(Variables)
-        String color; 
-        int speed;
+        String color = "Red"; 
+        int speed = 100;
 
         void drive() {
             System.out.println("Car is runnning");
